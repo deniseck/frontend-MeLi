@@ -1,0 +1,38 @@
+.item-result {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-result:hover {
+    cursor: pointer;
+}
+
+.description-result {
+    padding: 32px;
+}
+
+.img-content {
+    min-width: 180px;
+    width: 180px;
+    height: 180px;
+}
+
+.img-content img {
+    border-radius: 4px;
+    max-width:100%;
+    max-height:100%;
+    display: block;
+    margin: auto;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.city {
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.title-result {
+    padding: 32px 16px 0px 16px;
+}
