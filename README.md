@@ -8,7 +8,8 @@ Levanta en http://localhost:4200/
 Para correr los unit tests:
 >ng test
 
-Pendiente:
+##Pendiente:
+
 -Breadcrumb: no encontré los datos necesarios en la respuesta de la api para poder desarrollarlo.
 
 -Pipe para mostrar el precio
