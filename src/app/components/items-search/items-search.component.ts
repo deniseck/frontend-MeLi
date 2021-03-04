@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Item } from 'src/app/models/itemSearch';
+import { Item } from 'src/app/models/Item';
+
 import { ItemsService } from 'src/app/services/items.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ItemsService } from 'src/app/services/items.service';
   styleUrls: ['./items-search.component.css']
 })
 export class ItemsSearchComponent implements OnInit {
-  itemsToshow: Array<Item> = [];
+  itemsToShow: Array<Item> = [];
   MAX_RESULTS = 4;
 
   constructor(private itemsService: ItemsService, private router: Router, private route: ActivatedRoute) { }
@@ -20,7 +21,7 @@ export class ItemsSearchComponent implements OnInit {
     this.itemsService.search(queryParams.search).subscribe(
       response => {
         console.log(response);
-        this.itemsToshow = response.items;
+        this.itemsToShow = response.items;
       }
     );
   }

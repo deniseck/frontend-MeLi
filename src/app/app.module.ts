@@ -7,6 +7,8 @@ import { ItemsSearchComponent } from './components/items-search/items-search.com
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { RouterTestingModule } from "@angular/router/testing";
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    RouterTestingModule,
     RouterModule.forRoot([
       {path: 'items', component: ItemsSearchComponent},
       {path: 'items/:id', component: ItemDetailComponent}

@@ -1,19 +1,23 @@
-<p class="breadcrumb">Home > item > dealle</p>
+<p class="breadcrumb">Home > item > detalle</p>
 <div class="white-box">
-    <div class="row">
-        <div class="img-content">
-            <img [src]="item.picture" alt="producto" />
+    <div *ngIf="item && !showError">
+        <div class="row">
+            <div class="img-content">
+                <img [src]="item.picture" alt="producto" />
+            </div>
+            <div class="column basic-info">
+                <div class="header">Nuevo - 234 vendidos</div>
+                <div class="title">{{item.title}}</div>
+                <div class="price">$ {{item.price.amount | number :'1.0-0'}}</div>
+                <button class="btn-buy">Comprar</button>
+            </div>
         </div>
-        <div class="column basic-info">
-            <div class="header">Nuevo - 234 vendidos</div>
-            <div class="title">{{item.title}}</div>
-            <div class="price">$ {{item.price.amount | number :'1.0-0'}}</div>
-            <button class="btn-buy">Comprar</button>
+        <div class="description-title">Descripción del producto</div>
+        <div class="description">
+            {{item.description}}
         </div>
     </div>
-    <div class="description-title">Descripción del producto</div>
-    <div class="description">
-        {{item.description}}
+    <div *ngIf="showError">
+        No se encontró el producto
     </div>
-    
 </div>

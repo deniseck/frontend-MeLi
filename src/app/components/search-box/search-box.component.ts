@@ -21,6 +21,7 @@ export class SearchBoxComponent implements OnInit {
 
   
   goToHome() {
+    this.searchContent = "";
     this.router.navigate(['/']);
   }
 }

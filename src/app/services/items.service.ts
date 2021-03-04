@@ -9,7 +9,6 @@ import { ItemsSearchResults } from '../models/ItemSearchResults';
 })
 export class ItemsService {
   apiEndpoint;
-  apiEndpointBORRAR; //TODO
 
   constructor(private http: HttpClient) { 
     this.apiEndpoint = "http://localhost:3600"
