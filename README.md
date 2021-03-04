@@ -8,7 +8,7 @@ Levanta en http://localhost:4200/
 Para correr los unit tests:
 >ng test
 
-##Pendiente:
+Pendiente:
 
 -Breadcrumb: no encontré los datos necesarios en la respuesta de la api para poder desarrollarlo.
 
@@ -21,8 +21,9 @@ Para correr los unit tests:
 -Agregar unit tests
 
 
+****************************************************************************************************
 
-
+****************************************************************************************************
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
