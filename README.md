@@ -1,5 +1,12 @@
 # FrontendMeli
 
+Para levantar el sitio: 
+>ng serve --open
+
+Levanta en http://localhost:4200/
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 ## Development server
