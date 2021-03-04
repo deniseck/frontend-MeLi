@@ -5,6 +5,20 @@ Para levantar el sitio:
 
 Levanta en http://localhost:4200/
 
+Para correr los unit tests:
+>ng test
+
+
+Pendiente:
+*Breadcrumb: no encontré los datos necesarios en la respuesta de la api para poder desarrollarlo.
+*Pipe para mostrar el precio
+*Manejo de errores: mensajes de error + mensaje de búsqueda sin resultados
+*Spinner
+*Agregar unit tests
+
+
+
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
